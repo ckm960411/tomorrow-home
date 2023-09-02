@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         pretendard: ['var(--font-pretendard)'],
       },
+      colors: {
+        main: '#35C5F0',
+      },
     },
   },
   plugins: [],

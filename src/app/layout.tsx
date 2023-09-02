@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { pretendard } from '@/utils/variables';
 import localFont from 'next/dist/compiled/@next/font/dist/local';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,13 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <nav>
-        <div className="max-w-[1256px] mx-auto h-[80px] py-[10px] px-[60px] flex items-center">
-          <Link href="/">
-            <Image src={tomorrowHomeIcon} alt="" width={74} height={30} />
-          </Link>
-        </div>
-      </nav>
+      <Header />
       <body className="font-normal">{children}</body>
     </html>
   );
