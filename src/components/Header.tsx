@@ -4,9 +4,9 @@ import NavbarCategories from './NavbarCategories';
 
 export default function Header() {
   return (
-    <nav>
+    <header>
       <Navbar />
       <NavbarCategories />
-    </nav>
+    </header>
   );
 }

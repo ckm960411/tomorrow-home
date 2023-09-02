@@ -19,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={pretendard.variable}>
-      <Header />
-      <body className="font-normal">{children}</body>
+      <body className="font-normal">
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

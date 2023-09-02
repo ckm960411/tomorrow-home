@@ -9,7 +9,7 @@ const LINK_CLASSNAME = 'pt-[21px] pb-[15px] px-[5px] font-bold text-[18px]';
 
 export default function Navbar() {
   return (
-    <div className="border-b border-gray-200">
+    <nav className="border-b border-gray-200">
       <div className="max-w-[1256px] mx-auto h-[80px] py-[10px] px-[60px] flex items-center">
         <Link href="/" className="mr-[35px]">
           <Image src={tomorrowHomeIcon} alt="" width={74} height={30} />
@@ -55,6 +55,6 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
