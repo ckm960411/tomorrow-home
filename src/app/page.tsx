@@ -1,3 +1,9 @@
+import MainSlideBanner from '@/components/MainSlideBanner';
+
 export default function Home() {
-  return <main>main</main>;
+  return (
+    <main>
+      <MainSlideBanner />
+    </main>
+  );
 }
