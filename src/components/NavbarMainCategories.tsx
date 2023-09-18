@@ -26,6 +26,8 @@ export default function NavbarMainCategories({
 }: NavbarMainCategoriesProps) {
   const [isHovering, setIsHovering] = useState(false);
 
+  console.log('isHovering: ', isHovering);
+
   return (
     <div onMouseLeave={() => setIsHovering(false)}>
       <div className="border-b border-gray-200">

@@ -10,7 +10,7 @@ export default function NavbarSubCategories({
   categories,
 }: NavbarSubCategoriesProps) {
   return (
-    <div className="max-w-[1256px] mx-auto px-[60px] absolute top-full left-0 bg-white flex items-center overflow-x-auto">
+    <div className="max-w-[1256px] mx-auto px-[60px] z-10 absolute top-full left-0 bg-white flex items-center overflow-x-auto py-[12px]">
       {categories.map((category) => (
         <NavbarSubCategory key={category.id} category={category} />
       ))}
