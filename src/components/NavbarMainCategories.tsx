@@ -30,7 +30,7 @@ export default function NavbarMainCategories({
 
   return (
     <div onMouseLeave={() => setIsHovering(false)}>
-      <div className="border-b border-gray-200">
+      <div className="border-b border-gray-200 relative z-20 bg-white">
         <div className="max-w-[1256px] mx-auto h-[52px] px-[60px] flex items-center justify-between">
           <div className="flex items-center gap-[8px]">
             {navTitles.map((title) => (
@@ -48,7 +48,7 @@ export default function NavbarMainCategories({
           <PopularKeywords />
         </div>
       </div>
-      {isHovering && <NavbarSubCategories categories={categories} />}
+      <NavbarSubCategories categories={categories} isHovering={isHovering} />
     </div>
   );
 }
