@@ -1,10 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import tomorrowHomeIcon from '../../public/tomorrow-home.svg';
-import Image from 'next/image';
-import Link from 'next/link';
 import { pretendard } from '@/utils/variables';
-import localFont from 'next/dist/compiled/@next/font/dist/local';
 import Header from '@/components/Header';
 
 export const metadata: Metadata = {
