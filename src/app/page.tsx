@@ -6,7 +6,7 @@ import TodayDealsContainer from '@/components/TodayDealsContainer';
 
 export default function Home() {
   return (
-    <main>
+    <main className="pb-[72px]">
       <MainSlideBanner />
       <MainEventCategoryContainer />
       <TodayDealsContainer />

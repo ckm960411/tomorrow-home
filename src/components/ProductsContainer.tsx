@@ -26,7 +26,7 @@ export default function ProductsContainer() {
           <GoTriangleDown className="text-gray-500" />
         </div>
       </div>
-      <ProductList />
+      <ProductList productOrder={productOrder} />
     </div>
   );
 }
