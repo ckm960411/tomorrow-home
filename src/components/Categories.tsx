@@ -8,7 +8,7 @@ export default async function Categories() {
   const { categories } = await getCategories();
 
   return (
-    <div className="max-w-[1256px] mx-auto px-[60px] py-[40px] relative">
+    <div className="max-w-[1256px] mx-auto px-[60px] relative mt-[40px]">
       <p className="text-[20px] font-bold text-gray-800 mb-[16px]">카테고리</p>
       <div className="flex items-center max-w-[1176px] mx-auto overflow-x-auto">
         {categories.map((category) => (
