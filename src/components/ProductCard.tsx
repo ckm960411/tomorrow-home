@@ -4,13 +4,14 @@ import Image from 'next/image';
 import { BsFillStarFill } from 'react-icons/bs';
 import departureTodayImg from '../../public/departure_today.png';
 import tomorrowHomeDeliveryImg from '../../public/tomorrow-home-delivery.svg';
+import Link from 'next/link';
 
 interface ProductCardProps {
   product: Product;
 }
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div>
+    <Link href={`/products/${product.id}`}>
       <Image
         src={product.resized_image_url}
         alt={product.name}
@@ -106,6 +107,6 @@ export default function ProductCard({ product }: ProductCardProps) {
           ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
