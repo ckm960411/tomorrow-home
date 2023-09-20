@@ -1,3 +1,4 @@
+import ProductDetailContent from '@/components/ProductDetailContent';
 import ProductDetailTabMenu from '@/components/ProductDetailTabMenu';
 import ProductPurchaseSection from '@/components/ProductPurchaseSection';
 import { getProductById } from '@/service/get-product';
@@ -31,6 +32,14 @@ export default async function ProductPage({
         </div>
       </div>
       <ProductDetailTabMenu />
+      <div className="max-w-[1256px] mx-auto px-[60px] grid grid-cols-3">
+        <div className="pt-[60px] px-[32px] col-span-2">
+          <ProductDetailContent />
+        </div>
+        <div className="px-[32px] col-span-1">
+          <div className="bg-red-50">2</div>
+        </div>
+      </div>
     </div>
   );
 }
