@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ProductDetailTabMenu() {
   return (
-    <div className="bg-gray-50 border border-gray-100">
+    <div className="bg-gray-50 border border-gray-100 sticky top-0">
       <div className="max-w-[1256px] mx-auto px-[60px] flex">
         <button className="px-[40px] py-[16px] text-main text-[14px] font-bold border-b-2 border-main">
           상품정보
